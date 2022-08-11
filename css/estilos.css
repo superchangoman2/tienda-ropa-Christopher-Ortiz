@@ -1,0 +1,543 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Garamond;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #c23333da;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    color: rgb(233, 4, 214);
+}
+
+
+h2{
+    color: rgb(236, 74, 223);
+    text-align: center;
+}
+
+h3{
+    font-size: 2vw;
+}
+
+h1:hover, a:hover {
+    color: violet;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+ul {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    clear: both;
+}
+
+li, a {
+    color: #2b2b2b;
+    text-decoration: none;
+    padding: 1vw;
+    display: inline-block;
+    font-size: 1vw;
+}
+
+/* Header */
+#cabecera{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-content: center;
+}
+
+#buscador{
+    padding: 1vw;
+    border-radius: 1vw;
+    font-size: 1vw;
+    height: 3vw;
+    width: 10vw;
+    border-width: 0.1vw;
+}
+
+#btn-buscar{
+    height: 2vw;
+    width: 2vw;
+    font-size: 1vw;
+    border-width: 0.1vw;
+}
+
+#titulo-encabezado{
+    display: flex;
+    justify-content: center;
+    font-size: 5vw;
+}
+
+.submit-cabecera {
+    background: #c23333da;
+    padding: 0.5vw;
+    border-radius: 1vw;
+    border: #FFFFFF;
+    width: 6.5vw;
+    font-size: 1vw;
+}
+
+.submit-cabecera:hover {
+    background: #b95454da;
+}
+
+#div-perfil{
+    display: flex;
+    justify-self: center;
+}
+
+/* Menú */
+.barra-navegacion{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+}
+
+.barra-navegacion li{
+    padding: 1vh;
+    border: #b95454da;
+    border-radius: 5px;
+    padding: 0.1vw;
+}
+
+.barra-navegacion li a{
+    font-size: 4vw;
+}
+
+.barra-navegacion li a:hover{
+    text-decoration: underline;
+
+}
+
+/* Area principal */
+#slider-principal{
+    width: 100%;  
+    height: 100%; 
+}
+
+.producto{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.producto:hover .texto-imagen {
+    opacity: 1;
+  } 
+
+.grid-secciones{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.grid-tendencia{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+}
+
+.item-tendencia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-imagen {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #b95454da;
+  }
+
+  .texto-sobrepuesto{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    text-align: center;
+  }
+
+
+.item-tendencia p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1vw;
+} 
+
+/* Contacto */
+
+form
+{
+    text-align: center;
+}
+
+fieldset{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+fieldset textarea{
+    width: 50vw;
+    height: 10vw;
+    font-size: 2vw;
+} 
+
+fieldset input, fieldset label{
+    font-size: 2vw;
+}
+
+#enviar-mensaje{
+    width: 15vw;
+    font-size: 2vw;
+}
+
+/* Footer */
+
+#abajo{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 2fr 0.1fr;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.enlaces-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.enlaces-footer a{
+    padding: 0;
+}
+
+#flecha-inicio{
+    background-color: rgb(167, 26, 26);
+    border-radius: 100%;
+    padding: 1vw;
+}
+
+footer iframe{
+    height: 10vw;
+    width: 40vw;
+}
+
+footer div{
+    text-align: center;
+}
+
+#redes img{
+    height: 1vw;
+    width: 1vw;
+}
+
+#redes p{
+    font-size: 1vw;
+}
+
+
+/* Inicio login */
+
+#head-login{
+    display: grid;
+    grid-template-rows: 0.9fr 0.6fr 4fr 3fr;
+    align-items:stretch;
+}
+
+.login-registrar {
+    height: 35.1vw;
+    position: relative;
+}
+
+.imagen-fondo img {
+    display: block;
+    width: 100%;
+    height: 40vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+
+.login-form {
+    position: absolute;
+    top: 10%;
+    left: 32vw;
+    margin: 0 0 0 -225px;
+    z-index: 100;
+    width: 60vw;
+    height: 28vw;
+    display: inline-block;
+    vertical-align: top;
+    background: rgba(255,255,255,.8);
+    padding: 25px 50px;
+}
+
+
+.input-cuenta-nueva{
+    width: 40vw;
+    background: #FFF;
+    border: 0;
+    padding: 0.5vw;
+    font-size: 2vw;
+    line-height: 1vw;
+    letter-spacing: 1px;
+    color: #777;
+}
+
+.form-cuenta-nueva{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+legend {
+    margin: 0;
+    padding: 0;
+    font-size: 3vw;
+    letter-spacing: 1px;
+}
+
+#boton-registrar{
+    background: #c23333da;
+    border: #FFFFFF;
+    color: #FFFFFF;
+}
+
+#boton-registrar:hover {
+    background: #b95454da;
+    color: #000000;
+}
+
+/* Fin login */
+
+/* Inicio dresses */
+
+.separador-fondo{
+    background-color: #FFEEEE;
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.separador-fondo h2{
+    color: #000000;
+}
+
+.paginacion a{
+    padding: 0px;
+}
+
+/* Fin dresses */
+
+/* Inicio terms */
+
+.div-fondo-terminos{
+    background-color: #FFFFFF;
+}
+
+.div-texto-terminos, .div-texto-terminos{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin-left: 15vh;
+    margin-right: 15vh;
+    font-size: 18px;
+}
+
+
+.div-texto-terminos p, .div-texto-terminos p{
+    font-size: 1vw;
+    line-height: 1vw;
+    letter-spacing: 0.1vw;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5vw;
+}
+
+.div-texto-terminos li{
+    padding: 0;
+}
+
+/* Fin terms */
+
+.div-about-us {
+    height: 100vh;
+    position: relative;
+}
+
+
+.div-sobrepuesto{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    margin: 0 0 0 -225px;
+    z-index: 100;
+    display: inline-block;
+    vertical-align: top;
+    padding: 25px 50px;
+}
+
+.div-sobrepuesto h2{
+    font-size: 14vh;
+    color: #FFFFFF;
+}
+
+.div-ropa{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Mobile First */
+
+@media (max-width: 319px) {
+    .producto img, .item-tendencia img{
+        width: 18vw;
+        height: 25vw;
+    }
+
+    .texto-sobrepuesto{
+        font-size: 14px;
+    }
+
+    .login-form {
+        padding-top: 1vw;
+        left: 95vw;
+    } 
+
+}
+
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .producto img, .item-tendencia img{
+        width: 8vw;
+        height: 18vw;
+    }
+    .texto-sobrepuesto{
+        font-size: 16px;
+    }
+
+    .login-form {
+        padding-top: 1vw;
+        left: 85vw;
+    } 
+
+    .form-cuenta-nueva{
+        display: block;
+    }
+
+
+}
+
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .producto img, .item-tendencia img{
+        width: 10vw;
+        height: 20vw;
+    }
+    .texto-sobrepuesto{
+        font-size: 20px;
+    }
+
+    .login-form {
+        padding-top: 1vw;
+        left: 65vw;
+    } 
+    .input-cuenta-nueva{
+        width: 20vw;
+        font-size: 1vw;
+    }
+
+    .form-cuenta-nueva{
+        display: block;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .producto img, .item-tendencia img{
+        width: 15vw;
+        height: 25vw;
+    }
+    .texto-sobrepuesto{
+        font-size: 20px;
+    }
+
+    .login-form {
+        left: 42vw;
+    } 
+
+    .input-cuenta-nueva{
+        width: 30vw;
+        font-size: 1.8vw;
+    }
+
+    .form-cuenta-nueva{
+        display: block;
+    }
+    
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .producto img, .item-tendencia img{
+        width: 23vw;
+        height: 34vw;
+    }
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+    .texto-sobrepuesto{
+        font-size: 25px;
+    }
+    .grid-tendencia{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .login-form {
+        left: 40vw;
+    } 
+
+}
+
+@media (min-width: 1200px) {
+    .producto img, .item-tendencia img{
+        width: 25vw;
+        height: 35vw;
+    }
+    h1, h2 {
+        font-size: 4rem;
+    }
+    .texto-sobrepuesto{
+        font-size: 50px;
+    }
+    .grid-tendencia{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+}
