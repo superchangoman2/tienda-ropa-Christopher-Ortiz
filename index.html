@@ -5,24 +5,29 @@
         <title>E-commerce Ropa</title>
         <link rel="shortcut icon" href="img/dress.ico" type="image/x-icon">
         <link rel="stylesheet" href="bootstrap-5.2/css/bootstrap.css">
-        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/estilos.css"> 
     </head>
     <body>
-        <!-- Header -->
-        <header id="cabecera">
-            <div>
-                <input id="buscador" type="text" placeholder="Buscar"> 
-                <input id="btn-buscar" type="submit" value="🔎"/>      
-            </div>                 
-            <div id="titulo-encabezado">                
-                <a href="index.html"><h1>E-Commerce Ropa</h1></a>                
-            </div>
-            <div id="div-perfil">
-                <input class="submit-cabecera" type="submit" value="LOGIN👤"/>
-                <input class="submit-cabecera" type="submit" value="CARRITO🛒"/>
-                <a href="login.html">Registrate</a>
-            </div>
-        </header>
+
+        <div id="cabecera" class="container-fluid bg-light">
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
+                <form class="col-3 col-lg-auto mb-3 mb-lg-0 me-lg-3 d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success bi bi-search-heart" type="submit"></button>
+                </form>
+        
+                <ul class="nav col-6 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <a href="index.html" class="titulo"><h1>E-Commerce Ropa</h1></a>
+                </ul>
+        
+                <div class="col-md-3 text-end">
+                    <button type="button" class="btn btn-outline-primary me-2">Login <i class="bi bi-person-heart"></i></button>
+                    <button type="button" class="btn btn-outline-primary">Carrito <i class="bi bi-bag-heart-fill"></i></button>
+                    <a href="login.html">Registrate<i class="bi bi-person-plus-fill"></i></a>
+                </div>
+            </header>
+          </div>
 
         <!-- Menú -->
         <nav>
@@ -33,12 +38,30 @@
                 <li><a href="dresses.html">Descubre</a></li>
             </ul>
         </nav>
-
+     
         <!-- Area principal -->
         <main>
-            <section>
-                <img id="slider-principal" class="fade-in-imagen" src="img/slider.JPG" alt="Tendencias">
-            </section>
+            <div id="slider" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="fade-in-imagen slider-principal" src="img/slider.JPG" alt="Tendencias">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="fade-in-imagen slider-principal" src="img/fondo-login.JPG" alt="Tendencias">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="fade-in-imagen slider-principal" src="img/slider.JPG" alt="Tendencias">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
 
             <!-- Secciones mas vendidas -->
             <div class="separador-fondo">
@@ -97,26 +120,30 @@
                 </div>
             </div>
         </main>
-        <hr>
         <!-- Contacto -->
+        <div class="separador-fondo">
+            <h2>Contactanos</h2>
+        </div>
         <form action=" ">
-            <fieldset>
-                <div>
-                    <legend> Contactanos:</legend>
-                    <label for="comentario">Comentarios:</label><br>
-                    <textarea name="comentario" ></textarea>
+            <fieldset class="py-4">
+                <div class="col-8">
+                    <label for="comentario" class="form-label">Comentarios</label>
+                    <textarea class="form-control" id="comentario"></textarea>
                 </div>
-                <div>
+                <div class="col-4">
                     <label for="nombre"> Nombre: </label>
-                    <input type="text" name="nombre">
+                    <input class="form-control" type="text" name="nombre">
                 </div>
-                <div>
+                <div class="col-4">
                     <label for="correo"> Email: </label>
-                    <input type="email" name="correo"><br>
+                    <input class="form-control" type="email" name="correo"><br>
                 </div>
-            </fieldset>
-            <input id="enviar-mensaje" type="submit" value="Enviar mensaje"/>
+                <div class="col-4">
+                    <button class="btn btn-primary text-opacity-75" type="submit">Enviar mensaje</button>
+                </div> 
+            </fieldset>          
         </form>
+
         <!-- Pie de página -->
         <footer id="abajo" >
             <ul class="enlaces-footer">
