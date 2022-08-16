@@ -40,27 +40,44 @@
         </nav>
         <!-- Area principal -->
         <main>
-            <div class="login-registrar">
-                <div class="imagen-fondo">
-                    <img src="img/fondo-login.jpg" alt="vestidos">
-                </div>
-                <div class="login-form">
-                    <form class="form-cuenta-nueva" action=" ">
-                            <legend> Crear Cuenta</legend>
-                            <input class="input-cuenta-nueva" type="text" name="nombre" placeholder="Nombre"><br>
-                            <input class="input-cuenta-nueva" type="date" name="fecha_nacimiento" placeholder="Fecha de Nacimiento"><br>
-                            <input class="input-cuenta-nueva" type="email" name="correo" placeholder="Correo"><br>
-                            <input class="input-cuenta-nueva" type="password" name="password" placeholder="Contraseña"><br>
-                            <select class="input-cuenta-nueva" name="genero">
-                                <option value="">Selecciona tu Genero</option>
+            <div class="container-about-us mb-2 fade-in-imagen">
+                <img src="img/fondo-aboutus.JPG" alt="Snow" style="width:100%;">
+                <div class="centered-about-us">
+                    <form class="bg-light p-5 bg-gradient opacity-75 rounded">
+                        <div class="mb-1">
+                            <label for="nombre" class="form-label text-dark h4">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombre" aria-describedby="nombre-help">
+                        </div>
+                        <div class="mb-1">
+                            <label for="fecha_nacimiento" class="form-label text-dark h4">Fecha de Nacimiento</label>
+                            <input class="form-control" type="date" name="fecha_nacimiento" placeholder="Fecha de Nacimiento">
+                        </div>
+                        <div class="mb-1">
+                            <label for="correo" class="form-label text-dark h4">Correo Electronico</label>
+                            <input type="email" class="form-control" id="correo" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">Nunca compartiremos tu correo con nadie mas.</div>
+                        </div>
+                        <div class="mb-1">
+                            <label for="password" class="form-label text-dark h4">Password</label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+                        <div class="mb-1">
+                            <label for="genero" class="form-label text-dark h4">Genero</label>
+                            <select class="form-select" id="genero">
+                                <option value="" selected>Selecciona tu Genero</option>
                                 <option value="hombre">Hombre</option>
                                 <option value="mujer">Mujer</option>
                                 <option value="no_binario">No binario</option>
                             </select>
-                            <input class="input-cuenta-nueva" id="boton-registrar" type="submit" value="Registrarme"/>
+                        </div>
+                        <div class="mb-1 form-check">
+                            <input type="checkbox" class="form-check-input" id="acepto">
+                            <label class="form-check-label text-dark" for="acepto">Acepto <a href="terms.html">Terminos y Condiciones</a></label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Registrarme</button>
                     </form>
                 </div>
-            </div>
+            </div>  
         </main>
         <!-- Pie de página -->
         <footer id="abajo" >
