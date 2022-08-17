@@ -1,0 +1,19 @@
+{
+  "name": "tienda-ropa-christopher-ortiz",
+  "version": "1.0.0",
+  "description": "El contenido de la página es una simulación del estilo de una tienda de ropa en linea y solo fue creada como practica de aprendizaje de desarrollo de páginas web.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superchangoman2/tienda-ropa-Christopher-Ortiz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/superchangoman2/tienda-ropa-Christopher-Ortiz/issues"
+  },
+  "homepage": "https://github.com/superchangoman2/tienda-ropa-Christopher-Ortiz#readme"
+}
