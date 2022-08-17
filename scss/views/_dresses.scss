@@ -1,0 +1,25 @@
+/* Inicio dresses */
+
+.separador-fondo{
+    background-color: #FFEEEE;
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+
+    h2{
+        background: -webkit-linear-gradient(#ffa69e, #861657);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.paginacion a{
+    padding: 0px;
+}
+
+.div-ropa{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+/* Fin dresses */
