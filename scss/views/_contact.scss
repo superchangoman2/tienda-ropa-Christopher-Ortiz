@@ -1,0 +1,17 @@
+/* Contacto */
+fieldset{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+fieldset textarea{
+    width: 50vw;
+    height: 10vw;
+    font-size: 2vw;
+} 
+
+fieldset input, fieldset label{
+    font-size: 2vw;
+}

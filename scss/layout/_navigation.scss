@@ -1,0 +1,31 @@
+/* Menú */
+.barra-navegacion{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    animation: slide-in 1000ms;    
+    li{
+        padding: 1vh;
+        border: $secondary-btn-color;
+        border-radius: 5px;
+        padding: 0.1vw;
+    
+        a{
+            font-size: 4vw;
+        }
+    }
+    li:hover{
+        opacity:1;
+    }
+}
+
+@keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+      opacity: 0.25;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }

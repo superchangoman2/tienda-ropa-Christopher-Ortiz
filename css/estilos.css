@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* Estilos Generales */
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +6,34 @@
   box-sizing: border-box;
 }
 
+.btn-outline-primary {
+  --bs-btn-color: #c23333da;
+  --bs-btn-border-color: #c23333da;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #c23333da;
+  --bs-btn-hover-border-color: #c23333da;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #c23333da;
+  --bs-btn-active-border-color: #c23333da;
+  --bs-btn-disabled-color: #c23333da;
+  --bs-btn-disabled-border-color: #c23333da;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #c23333da;
+  --bs-btn-border-color: #c23333da;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #b95454da;
+  --bs-btn-hover-border-color: #b95454da;
+  --bs-btn-active-bg: #b95454da;
+  --bs-btn-active-border-color: #b95454da;
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #c23333da;
+  --bs-btn-disabled-border-color: #c23333da;
+}
+
+/* Estilos Generales */
 body {
   background-image: linear-gradient(326deg, #ad2c78 0%, #ffa69e 74%);
   display: flex;
@@ -22,10 +49,6 @@ body {
 h2 {
   color: rgb(236, 74, 223);
   text-align: center;
-}
-
-h3 {
-  font-size: 2vw;
 }
 
 .titulo:hover, a:hover {
@@ -60,37 +83,6 @@ li, a {
 }
 
 /* Header */
-.btn-outline-primary {
-  --bs-btn-color: #c23333da;
-  --bs-btn-border-color: #c23333da;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #c23333da;
-  --bs-btn-hover-border-color: #c23333da;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #c23333da;
-  --bs-btn-active-border-color: #c23333da;
-  --bs-btn-disabled-color: #c23333da;
-  --bs-btn-disabled-border-color: #c23333da;
-}
-
-.btn-primary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #c23333da;
-  --bs-btn-border-color: #c23333da;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #b95454da;
-  --bs-btn-hover-border-color: #b95454da;
-  --bs-btn-active-bg: #b95454da;
-  --bs-btn-active-border-color: #b95454da;
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #c23333da;
-  --bs-btn-disabled-border-color: #c23333da;
-}
-
-/* #div-perfil{
-    display: flex;
-    justify-self: center;
-} */
 /* Menú */
 .barra-navegacion {
   display: grid;
@@ -121,6 +113,67 @@ li, a {
     opacity: 1;
   }
 }
+/* Footer */
+#abajo {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr 2fr 0.1fr;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+
+.enlaces-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.enlaces-footer a {
+  padding: 0;
+}
+
+#flecha-inicio {
+  background-color: rgb(167, 26, 26);
+  border-radius: 100%;
+  padding: 1vw;
+}
+
+#flecha-inicio:hover {
+  background: -webkit-linear-gradient(rgb(204, 130, 233), rgb(150, 56, 238));
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+.ir-inicio {
+  animation: bounce 300ms alternate infinite cubic-bezier(0.2, 0.65, 0.6, 1);
+}
+
+footer iframe {
+  height: 10vw;
+  width: 40vw;
+}
+
+footer div {
+  text-align: center;
+}
+
+#redes img {
+  height: 1vw;
+  width: 1vw;
+}
+
+#redes p {
+  font-size: 1vw;
+}
+
+form {
+  text-align: center;
+}
+
 /* Area principal */
 .slider-principal {
   width: 100%;
@@ -233,10 +286,6 @@ li, a {
 }
 
 /* Contacto */
-form {
-  text-align: center;
-}
-
 fieldset {
   display: flex;
   flex-direction: column;
@@ -252,63 +301,6 @@ fieldset textarea {
 
 fieldset input, fieldset label {
   font-size: 2vw;
-}
-
-/* Footer */
-#abajo {
-  display: grid;
-  grid-template-columns: 4fr 4fr 4fr 2fr 0.1fr;
-  align-items: center;
-  background-color: #FFFFFF;
-}
-
-.enlaces-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.enlaces-footer a {
-  padding: 0;
-}
-
-#flecha-inicio {
-  background-color: rgb(167, 26, 26);
-  border-radius: 100%;
-  padding: 1vw;
-}
-
-#flecha-inicio:hover {
-  background: -webkit-linear-gradient(rgb(204, 130, 233), rgb(150, 56, 238));
-}
-
-@keyframes bounce {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-20px);
-  }
-}
-.ir-inicio {
-  animation: bounce 300ms alternate infinite cubic-bezier(0.2, 0.65, 0.6, 1);
-}
-
-footer iframe {
-  height: 10vw;
-  width: 40vw;
-}
-
-footer div {
-  text-align: center;
-}
-
-#redes img {
-  height: 1vw;
-  width: 1vw;
-}
-
-#redes p {
-  font-size: 1vw;
 }
 
 /* Inicio dresses */
@@ -362,14 +354,12 @@ footer div {
   --bs-accordion-btn-bg: #f5bcbcda;
 }
 
-/* Fin terms */
 .container-about-us {
   position: relative;
   text-align: center;
   color: white;
 }
 
-/* Texto centrado en imagen */
 .centered-about-us {
   position: absolute;
   top: 50%;
@@ -382,6 +372,7 @@ footer div {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+/* Fin terms */
 /* Mobile First */
 @media (max-width: 319px) {
   .producto img, .item-tendencia img {
