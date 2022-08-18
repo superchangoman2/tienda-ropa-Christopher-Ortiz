@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/**************************************************** INICIO CODIGO PERSONALIZADO ****************************************************/
 * {
   margin: 0;
   padding: 0;
@@ -31,6 +32,33 @@
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #c23333da;
   --bs-btn-disabled-border-color: #c23333da;
+}
+
+.accordion-body, .accordion-body {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  margin-left: 15vh;
+  margin-right: 15vh;
+  font-size: 18px;
+}
+
+.accordion-body p {
+  font-size: 1vw;
+  line-height: 1vw;
+  letter-spacing: 0.1vw;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5vw;
+}
+
+.accordion-body li {
+  padding: 0;
+}
+
+.accordion {
+  --bs-accordion-border-color: #f5bcbcda;
+  --bs-accordion-btn-bg: #f5bcbcda;
 }
 
 /* Estilos Generales */
@@ -321,39 +349,19 @@ fieldset input, fieldset label {
   padding: 0px;
 }
 
+.div-ropa {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 /* Fin dresses */
 /* Inicio terms */
 .div-fondo-terminos {
   background-color: #FFFFFF;
 }
 
-.accordion-body, .accordion-body {
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-  margin-left: 15vh;
-  margin-right: 15vh;
-  font-size: 18px;
-}
-
-.accordion-body p {
-  font-size: 1vw;
-  line-height: 1vw;
-  letter-spacing: 0.1vw;
-  font-weight: 400;
-  display: flex;
-  flex-direction: column;
-  margin: 0.5vw;
-}
-
-.accordion-body li {
-  padding: 0;
-}
-
-.accordion {
-  --bs-accordion-border-color: #f5bcbcda;
-  --bs-accordion-btn-bg: #f5bcbcda;
-}
-
+/* Fin terms */
+/*Inicio Acerca de nosotros */
 .container-about-us {
   position: relative;
   text-align: center;
@@ -367,12 +375,7 @@ fieldset input, fieldset label {
   transform: translate(-50%, -50%);
 }
 
-.div-ropa {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-/* Fin terms */
+/* Fin Acerca de nosotros */
 /* Mobile First */
 @media (max-width: 319px) {
   .producto img, .item-tendencia img {
@@ -440,5 +443,6 @@ fieldset input, fieldset label {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+/***************************************************** FIN CODIGO PERSONALIZADO *****************************************************/
 
 /*# sourceMappingURL=estilos.css.map */
