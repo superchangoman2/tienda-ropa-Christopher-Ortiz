@@ -1,8 +1,7 @@
 /* Mobile First */
 @media (max-width: 319px) {
     .producto img, .item-tendencia img{
-        width: 18vw;
-        height: 25vw;
+        @include tamanios-responsive(18vw, 25vw);
     }
 
     .texto-sobrepuesto{
@@ -13,8 +12,7 @@
 
 @media (min-width: 320px) and (max-width: 479px) {
     .producto img, .item-tendencia img{
-        width: 8vw;
-        height: 18vw;
+        @include tamanios-responsive(8vw, 18vw);
     }
     .texto-sobrepuesto{
         font-size: 16px;
@@ -24,8 +22,7 @@
 
 @media (min-width: 480px) and (max-width: 767px) {
     .producto img, .item-tendencia img{
-        width: 10vw;
-        height: 20vw;
+        @include tamanios-responsive(10vw, 20vw);
     }
     .texto-sobrepuesto{
         font-size: 20px;
@@ -35,8 +32,7 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .producto img, .item-tendencia img{
-        width: 15vw;
-        height: 25vw;
+        @include tamanios-responsive(15vw, 25vw);
     }
     .texto-sobrepuesto{
         font-size: 20px;
@@ -45,8 +41,7 @@
 
 @media (min-width: 1024px) and (max-width: 1199px) {
     .producto img, .item-tendencia img{
-        width: 23vw;
-        height: 34vw;
+        @include tamanios-responsive(23vw, 34vw);
     }
     h2 {
         font-size: 1.5rem;
@@ -62,8 +57,7 @@
 
 @media (min-width: 1200px) {
     .producto img, .item-tendencia img{
-        width: 25vw;
-        height: 35vw;
+        @include tamanios-responsive(25vw, 35vw);
     }
     h2 {
         font-size: 4rem;

@@ -1,0 +1,28 @@
+@mixin estilo-titulo($color1, $color2) {
+    background: -webkit-linear-gradient($color1, $color2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin grid-columnas($num-columnas, $tamanio){
+    display: grid;
+    grid-template-columns: repeat($num-columnas, $tamanio);
+    justify-content: center;
+}
+
+@mixin tamanios-responsive($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin estilo-boton-primario($color-btn, $borde-btn, $hover-btn, $hover-fondo-btn, $hover-borde-btn, $activo-btn, $borde-activo-btn, $inactivo-btn, $borde-inactivo-btn){
+    --bs-btn-color: $color-btn;
+    --bs-btn-border-color: $borde-btn;
+    --bs-btn-hover-color: $hover-btn;
+    --bs-btn-hover-bg: $hover-fondo-btn;
+    --bs-btn-hover-border-color: $hover-borde-btn;
+    --bs-btn-active-bg: $activo-btn;
+    --bs-btn-active-border-color: $borde-activo-btn;
+    --bs-btn-disabled-color: $inactivo-btn;
+    --bs-btn-disabled-border-color: $borde-inactivo-btn;
+}

@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 4fr 4fr 4fr 2fr 0.1fr;
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: $color-default-fondo;
 }
 
 .enlaces-footer{
@@ -14,7 +14,6 @@
     a{
         padding: 0;
     }
-    
 }
 
 #flecha-inicio{
@@ -44,13 +43,14 @@
   }
 
 
-footer iframe{
+footer {
+  iframe{
     height: 10vw;
     width: 40vw;
-}
-
-footer div{
+  }
+  div{
     text-align: center;
+  }
 }
 
 #redes img{

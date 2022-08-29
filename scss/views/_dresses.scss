@@ -8,9 +8,7 @@
     margin-bottom: 1vh;
 
     h2{
-        background: -webkit-linear-gradient(#ffa69e, #861657);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include estilo-titulo(#ffa69e, #861657);
     }
 }
 
@@ -19,7 +17,6 @@
 }
 
 .div-ropa{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    @include grid-columnas(3, 1fr);
 }
 /* Fin dresses */

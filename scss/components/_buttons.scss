@@ -1,26 +1,12 @@
 .btn-outline-primary {
-    --bs-btn-color: #c23333da;
-    --bs-btn-border-color: #c23333da;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #c23333da;
-    --bs-btn-hover-border-color: #c23333da;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #c23333da;
-    --bs-btn-active-border-color: #c23333da;
-    --bs-btn-disabled-color: #c23333da;
-    --bs-btn-disabled-border-color: #c23333da;
+    // $color-btn, $borde-btn, $hover-btn, $hover-fondo-btn, $hover-borde-btn, $activo-btn, $borde-activo-btn,$inactivo-btn, $borde-inactivo-btn
+    @include estilo-boton-primario($primary, $primary, $color-default-fondo, $primary, $primary, $primary, $primary, $primary, $primary);
+    --bs-btn-active-color: $color-default-fondo;
   }
 
   .btn-primary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #c23333da;
-  --bs-btn-border-color: #c23333da;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #b95454da;
-  --bs-btn-hover-border-color: #b95454da;
-  --bs-btn-active-bg: #b95454da;
-  --bs-btn-active-border-color: #b95454da;
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #c23333da;
-  --bs-btn-disabled-border-color: #c23333da;
+    // $color-btn, $borde-btn, $hover-btn, $hover-fondo-btn, $hover-borde-btn, $activo-btn, $borde-activo-btn,$inactivo-btn, $borde-inactivo-btn
+    @include estilo-boton-primario($color-default-fondo, $primary, $color-default-fondo, $secondary, $secondary, $secondary, $secondary, $color-default-fondo, $primary);
+  --bs-btn-bg: $primary;
+  --bs-btn-disabled-bg: $primary;
 }

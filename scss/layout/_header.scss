@@ -6,22 +6,17 @@ body{
     flex-direction: column;
 }
 
-.titulo {
-    background: -webkit-linear-gradient(rgb(228, 150, 217), rgb(238, 56, 198));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-
 h2{
     color: rgb(236, 74, 223);
     text-align: center;
 }
 
+.titulo {
+    @include estilo-titulo(rgb(228, 150, 217), rgb(238, 56, 198));
+  }
+
 .titulo:hover, a:hover {
-    background: -webkit-linear-gradient(rgb(204, 130, 233), rgb(150, 56, 238));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include estilo-titulo(rgb(204, 130, 233), rgb(150, 56, 238));
 }
 
 header{

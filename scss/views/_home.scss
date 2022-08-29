@@ -22,21 +22,22 @@
   } 
 
 .grid-secciones{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
+  @include grid-columnas(3, 1fr);
 }
 
 .grid-tendencia{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-content: center;
+  @include grid-columnas(5, 1fr);
 }
 
 .item-tendencia{
     display: flex;
     flex-direction: column;
     align-items: center;
+    p{
+      text-align: center;
+      font-weight: bold;
+      font-size: 1vw;
+  } 
 }
 
 .item-tendencia:hover {
@@ -70,16 +71,9 @@
   }
 
   .texto-sobrepuesto{
-    color: white;
+    color: $color-default-fondo;
     position: absolute;
     top: 50%;
     left: 40%;
     text-align: center;
   }
-
-
-.item-tendencia p{
-    text-align: center;
-    font-weight: bold;
-    font-size: 1vw;
-} 

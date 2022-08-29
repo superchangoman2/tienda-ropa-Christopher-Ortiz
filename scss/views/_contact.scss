@@ -4,14 +4,18 @@ fieldset{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .tamanio-letra{
+        font-size: 2vw;
+    }
+    textarea{
+        width: 50vw;
+        height: 10vw;
+        @extend .tamanio-letra;
+    } 
+    label{
+        @extend .tamanio-letra;
+    }
+    input{
+        @extend .tamanio-letra;
+    }
   }
-
-fieldset textarea{
-    width: 50vw;
-    height: 10vw;
-    font-size: 2vw;
-} 
-
-fieldset input, fieldset label{
-    font-size: 2vw;
-}
