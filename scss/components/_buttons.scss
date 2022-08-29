@@ -2,6 +2,17 @@
     // $color-btn, $borde-btn, $hover-btn, $hover-fondo-btn, $hover-borde-btn, $activo-btn, $borde-activo-btn,$inactivo-btn, $borde-inactivo-btn
     @include estilo-boton-primario($primary, $primary, $color-default-fondo, $primary, $primary, $primary, $primary, $primary, $primary);
     --bs-btn-active-color: $color-default-fondo;
+    // Reset
+    a{
+      all: initial;
+      * {
+        all: unset;
+      }
+      @include estilo-titulo($primary, $primary);
+    }
+    a:hover{
+      @include estilo-titulo($color-default-fondo, $color-default-fondo);
+    }
   }
 
   .btn-primary {

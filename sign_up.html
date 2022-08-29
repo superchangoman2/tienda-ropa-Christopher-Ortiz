@@ -43,25 +43,41 @@
                 <img src="img/fondo-aboutus.JPG" alt="Snow" style="width:100%;">
                 <div class="centered-about-us">
                     <form class="bg-light p-5 bg-gradient opacity-75 rounded">
-                        <h2 class="h3 mb-3 text-dark">Ingresa tus credenciales</h2>
                         <div class="mb-1">
-                            <label for="cuenta" class="form-label text-dark h4">Cuenta</label>
-                            <input type="text" class="form-control" id="cuenta" aria-describedby="cuenta-help">
+                            <label for="nombre" class="form-label text-dark h4">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombre" aria-describedby="nombre-help">
+                        </div>
+                        <div class="mb-1">
+                            <label for="fecha_nacimiento" class="form-label text-dark h4">Fecha de Nacimiento</label>
+                            <input class="form-control" type="date" name="fecha_nacimiento" placeholder="Fecha de Nacimiento">
+                        </div>
+                        <div class="mb-1">
+                            <label for="correo" class="form-label text-dark h4">Correo Electronico</label>
+                            <input type="email" class="form-control" id="correo" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">Nunca compartiremos tu correo con nadie mas.</div>
                         </div>
                         <div class="mb-1">
                             <label for="password" class="form-label text-dark h4">Password</label>
                             <input type="password" class="form-control" id="password">
                         </div>
+                        <div class="mb-1">
+                            <label for="genero" class="form-label text-dark h4">Genero</label>
+                            <select class="form-select" id="genero">
+                                <option value="" selected>Selecciona tu Genero</option>
+                                <option value="hombre">Hombre</option>
+                                <option value="mujer">Mujer</option>
+                                <option value="no_binario">No binario</option>
+                            </select>
+                        </div>
                         <div class="mb-1 form-check">
                             <input type="checkbox" class="form-check-input" id="acepto">
-                            <label class="form-check-label text-dark" for="acepto">Recuerdame</label>
+                            <label class="form-check-label text-dark" for="acepto">Acepto <a href="terms.html">Terminos y Condiciones</a></label>
                         </div>
-                        <button type="submit" class="btn btn-primary">Entrar</button>
+                        <button type="submit" class="btn btn-primary">Registrarme</button>
                     </form>
                 </div>
             </div>  
         </main>
-
         <!-- Pie de página -->
         <footer id="abajo" >
             <ul class="enlaces-footer">
