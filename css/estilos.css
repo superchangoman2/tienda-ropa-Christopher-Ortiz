@@ -73,6 +73,10 @@
   --bs-accordion-btn-bg: #f5bcbcda;
 }
 
+.accordion-button p {
+  font-size: 2vw;
+}
+
 /*!
  * Bootstrap  v5.2.0 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -11142,6 +11146,45 @@ fieldset textarea {
 }
 
 /* Fin Acerca de nosotros */
+.sucursal .info-item {
+  background: rgba(185, 84, 84, 0.8549019608);
+  padding: 30px;
+  height: 100%;
+}
+.sucursal .info-item .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  font-size: 24px;
+  line-height: 0;
+  color: #ffffff;
+  background: rgba(194, 51, 51, 0.8549019608);
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.sucursal .info-item h3, .sucursal .info-item .h3 {
+  font-size: 20px;
+  color: #212529;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+}
+.sucursal .info-item p {
+  padding: 0;
+  margin: 0;
+  line-height: 24px;
+  font-size: 14px;
+}
+.sucursal .info-item a {
+  font-size: 24px;
+  display: inline-block;
+  color: rgba(55, 55, 63, 0.7);
+  line-height: 1;
+  margin: 4px 6px 0 0;
+  transition: 0.3s;
+}
+
 /* Mobile First */
 @media (max-width: 319px) {
   .producto img, .item-tendencia img {
