@@ -11193,6 +11193,9 @@ fieldset textarea {
   .texto-sobrepuesto {
     font-size: 14px;
   }
+  .centered-about-us {
+    top: 10%;
+  }
 }
 @media (min-width: 320px) and (max-width: 479px) {
   .producto img, .item-tendencia img {
@@ -11202,6 +11205,9 @@ fieldset textarea {
   .texto-sobrepuesto {
     font-size: 16px;
   }
+  .centered-about-us {
+    top: 10%;
+  }
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .producto img, .item-tendencia img {
@@ -11210,6 +11216,9 @@ fieldset textarea {
   }
   .texto-sobrepuesto {
     font-size: 20px;
+  }
+  .centered-about-us {
+    top: 10%;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {

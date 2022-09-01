@@ -44,26 +44,29 @@
         <main>
             <div class="container-about-us mb-2 fade-in-imagen">
                 <img src="img/fondo-aboutus.JPG" alt="Snow" style="width:100%;">
-                <div class="centered-about-us">
+                <div class="container centered-about-us w-75">
                     <div class="separador-fondo">
                         <h1>LOGIN</h1>
                     </div>
-                    <form class="bg-light p-5 bg-gradient opacity-75 rounded">
-                        
-                        <h2 class="h3 mb-3 text-dark">Ingresa tus credenciales</h2>
-                        <div class="mb-1">
-                            <label for="cuenta" class="form-label text-dark h4">Cuenta</label>
-                            <input type="text" class="form-control" id="cuenta" aria-describedby="cuenta-help">
-                        </div>
-                        <div class="mb-1">
-                            <label for="password" class="form-label text-dark h4">Password</label>
-                            <input type="password" class="form-control" id="password">
-                        </div>
-                        <div class="mb-1 form-check">
-                            <input type="checkbox" class="form-check-input" id="acepto">
-                            <label class="form-check-label text-dark" for="acepto">Recuerdame</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Entrar</button>
+                    <form class="bg-light bg-gradient opacity-75 rounded w-auto">
+                        <fieldset class="py-4">
+                            <h2 class="h3 mb-3 text-dark">Ingresa tus credenciales</h2>
+                            <div class="col-10">
+                                <label for="cuenta" class="form-label text-dark h4">Cuenta</label>
+                                <input type="text" class="form-control" id="cuenta" aria-describedby="cuenta-help">
+                            </div>
+                            <div class="col-10">
+                                <label for="password" class="form-label text-dark h4">Password</label>
+                                <input type="password" class="form-control" id="password">
+                            </div>
+                            <div class="col-10 form-check">
+                                <input type="checkbox" class="form-check-input" id="acepto">
+                                <label class="form-check-label text-dark" for="acepto">Recuerdame</label>
+                            </div>
+                            <div class="col-10">
+                                <button type="submit" class="btn btn-primary">Entrar</button>
+                            </div>
+                        </fieldset>
                     </form>
                 </div>
             </div>  
@@ -83,12 +86,16 @@
             </ul>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.9589583960083!2d116.56818621618704!3d40.43190767936331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f121d7687f2ccf%3A0xd040259b950522df!2sMuralla%20China!5e0!3m2!1ses-419!2smx!4v1657843575360!5m2!1ses-419!2smx"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div id="redes">
-                <p>Siguenos:</p>
-                <a href="https://www.facebook.com"><img src="img/facebook.ico" alt="Facebook"></a>
-                <a href="https://www.twitter.com"><img src="img/twitter.ico" alt="Twitter"></a>
-                <a href="https://www.instagram.com"><img src="img/instagram.ico" alt="Instagram"></a>
-
-                <p>Desarrollado por <a href="#">Christopher Ortiz</a></p>
+                
+                <div>
+                    <p>Siguenos:</p>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com"><img src="img/facebook.ico" alt="Facebook"></a>
+                    <a href="https://www.twitter.com"><img src="img/twitter.ico" alt="Twitter"></a>
+                    <a href="https://www.instagram.com"><img src="img/instagram.ico" alt="Instagram"></a>
+                    <p>Desarrollado por <a href="#">Christopher Ortiz</a></p>
+                </div>
             </div>
             <div class="ir-inicio">
                 <a id="flecha-inicio" href="#cabecera">🡅</a>
