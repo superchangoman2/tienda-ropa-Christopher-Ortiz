@@ -49,20 +49,10 @@
 }
 
 .accordion-body {
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-  margin-left: 15vh;
-  margin-right: 15vh;
-  font-size: 18px;
-}
-.accordion-body p {
-  font-size: 1vw;
-  line-height: 1vw;
-  letter-spacing: 0.1vw;
-  font-weight: 400;
-  display: flex;
-  flex-direction: column;
-  margin: 0.5vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 .accordion-body li {
   padding: 0;
@@ -73,7 +63,7 @@
   --bs-accordion-btn-bg: #f5bcbcda;
 }
 
-.accordion-button p {
+.accordion-button {
   font-size: 2vw;
 }
 
@@ -10882,7 +10872,6 @@ li, a {
   text-decoration: none;
   padding: 1vw;
   display: inline-block;
-  font-size: 1vw;
 }
 
 /* Header */
@@ -10919,18 +10908,20 @@ li, a {
 /* Footer */
 #abajo {
   display: grid;
-  grid-template-columns: 4fr 4fr 4fr 2fr 0.1fr;
+  grid-template-columns: 4fr 4fr 1fr 1fr;
   align-items: center;
   background-color: #ffffff;
 }
 
 .enlaces-footer {
-  display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 .enlaces-footer a {
   padding: 0;
+  font-size: 1vw;
+}
+.enlaces-footer div {
+  padding-left: 2vw;
 }
 
 #flecha-inicio {
@@ -10969,6 +10960,12 @@ footer div {
 }
 #redes p {
   font-size: 1vw;
+  margin: 0;
+}
+#redes .social {
+  height: 1vw;
+  width: 1vw;
+  padding: 0.5vw;
 }
 
 form {
@@ -11193,9 +11190,6 @@ fieldset textarea {
   .texto-sobrepuesto {
     font-size: 14px;
   }
-  .centered-about-us {
-    top: 10%;
-  }
 }
 @media (min-width: 320px) and (max-width: 479px) {
   .producto img, .item-tendencia img {
@@ -11204,9 +11198,6 @@ fieldset textarea {
   }
   .texto-sobrepuesto {
     font-size: 16px;
-  }
-  .centered-about-us {
-    top: 10%;
   }
 }
 @media (min-width: 480px) and (max-width: 767px) {
@@ -11217,8 +11208,8 @@ fieldset textarea {
   .texto-sobrepuesto {
     font-size: 20px;
   }
-  .centered-about-us {
-    top: 10%;
+  .centered-about-us h1, .centered-about-us .h1 {
+    font-size: 2.5rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -11229,11 +11220,17 @@ fieldset textarea {
   .texto-sobrepuesto {
     font-size: 20px;
   }
+  .centered-about-us h1, .centered-about-us .h1 {
+    font-size: 3rem;
+  }
 }
 @media (min-width: 1024px) and (max-width: 1199px) {
   .producto img, .item-tendencia img {
     width: 23vw;
     height: 34vw;
+  }
+  .centered-about-us h1, .centered-about-us .h1 {
+    font-size: 5rem;
   }
   h2, .h2 {
     font-size: 1.5rem;
@@ -11249,6 +11246,9 @@ fieldset textarea {
   .producto img, .item-tendencia img {
     width: 25vw;
     height: 35vw;
+  }
+  .centered-about-us h1, .centered-about-us .h1 {
+    font-size: 10rem;
   }
   h2, .h2 {
     font-size: 4rem;

@@ -7,10 +7,6 @@
     .texto-sobrepuesto{
         font-size: 14px;
     }
-    .centered-about-us{
-        top: 10%;
-        // @include tamanios-responsive(80vw, 10vw);
-    }
 }
 
 
@@ -21,11 +17,6 @@
     .texto-sobrepuesto{
         font-size: 16px;
     }
-    .centered-about-us{
-        top: 10%;
-        // @include tamanios-responsive(80vw, 10vw);
-    }
-    
 }
 
 
@@ -36,9 +27,8 @@
     .texto-sobrepuesto{
         font-size: 20px;
     }
-    .centered-about-us{
-        top: 10%;
-        // @include tamanios-responsive(80vw, 10vw);
+    .centered-about-us h1{
+        font-size: 2.5rem;
     }
 }
 
@@ -50,14 +40,20 @@
     .texto-sobrepuesto{
         font-size: 20px;
     }
+    .centered-about-us h1{
+        font-size: 3rem;
+    }
 
-    
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {
     .producto img, .item-tendencia img{
         @include tamanios-responsive(23vw, 34vw);
     }
+    .centered-about-us h1{
+        font-size: 5rem;
+    }
+
     h2 {
         font-size: 1.5rem;
     }
@@ -67,13 +63,16 @@
     .grid-tendencia{
         grid-template-columns: repeat(3, 1fr);
     }
-
 }
 
 @media (min-width: 1200px) {
     .producto img, .item-tendencia img{
         @include tamanios-responsive(25vw, 35vw);
     }
+    .centered-about-us h1{
+        font-size: 10rem;
+    }
+
     h2 {
         font-size: 4rem;
     }

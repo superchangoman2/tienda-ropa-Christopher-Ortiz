@@ -2,17 +2,19 @@
 
 #abajo{
     display: grid;
-    grid-template-columns: 4fr 4fr 4fr 2fr 0.1fr;
+    grid-template-columns: 4fr 4fr 1fr 1fr;
     align-items: center;
     background-color: $color-default-fondo;
 }
 
 .enlaces-footer{
-    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     a{
         padding: 0;
+        font-size: 1vw;
+    }
+    div{
+      padding-left: 2vw;
     }
 }
 
@@ -62,6 +64,12 @@ footer {
   }
   p{
     font-size: 1vw;
+    margin: 0;
+  }
+  .social{
+    height: 1vw;
+    width: 1vw;
+    padding: 0.5vw;
   }
   
 }
