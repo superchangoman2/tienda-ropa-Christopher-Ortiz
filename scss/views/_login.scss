@@ -1,19 +1,11 @@
-body, html {
-    height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
+
   
   .bg-img {
-    /* The image used */
     background-image: url("../../img/fondo-aboutus.JPG");
-
-    min-height: 380px;
-  
-    /* Center and scale the image nicely */
+    
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,38 +15,34 @@ body, html {
   /* Add styles to the form container */
   .login-form {
     position: absolute;
-    right: 0;
     margin: 20px;
     max-width: 300px;
     padding: 16px;
-    background-color: white;
-  }
-  
-  /* Full-width input fields */
-  input[type=text], input[type=password] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #f1f1f1;
-  }
-  
-  input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-  }
-  
-  /* Set a style for the submit button */
-  .btn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-  }
-  
-  .btn:hover {
-    opacity: 1;
+    background-color: $color-default-fondo;
+    .btn-login {
+      background-color: $primary;
+      color: $color-default-fondo;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+    
+    .btn-login:hover {
+      opacity: 1;
+    }
+
+    input:not(.form-check-input) {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: #f1f1f1;
+    }
+    // Forma de especificar el tipo de inputs y aplicarle estilos sin necesidad de clases o id
+    input[type=text]:focus, input[type=password]:focus, input[type=date]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
   }
