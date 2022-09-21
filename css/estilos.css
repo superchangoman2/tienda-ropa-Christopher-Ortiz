@@ -11021,6 +11021,7 @@ form {
   text-align: center;
   font-weight: bold;
   font-size: 1vw;
+  margin-bottom: 0.5vw;
 }
 
 .item-tendencia:hover {
@@ -11141,6 +11142,13 @@ fieldset textarea {
   transform: translate(-50%, -50%);
 }
 
+.div-texto-acerca {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 0.5vw;
+  padding-bottom: 1vw;
+}
+
 /* Fin Acerca de nosotros */
 .sucursal .info-item {
   background: rgba(185, 84, 84, 0.8549019608);
@@ -11212,7 +11220,7 @@ fieldset textarea {
 .login-form .btn-login:hover {
   opacity: 1;
 }
-.login-form input:not(.form-check-input) {
+.login-form input:not(.form-check-input), .login-form select {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -11225,7 +11233,11 @@ fieldset textarea {
 }
 
 .img-sign_up {
-  min-height: 700px;
+  min-height: 750px;
+}
+
+.sign_up-form {
+  max-width: 400px;
 }
 
 /* Mobile First */

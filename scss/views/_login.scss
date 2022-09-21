@@ -33,13 +33,14 @@
       opacity: 1;
     }
 
-    input:not(.form-check-input) {
+    input:not(.form-check-input), select{
       width: 100%;
       padding: 15px;
       margin: 5px 0 22px 0;
       border: none;
       background: #f1f1f1;
     }
+
     // Forma de especificar el tipo de inputs y aplicarle estilos sin necesidad de clases o id
     input[type=text]:focus, input[type=password]:focus, input[type=date]:focus {
       background-color: #ddd;
