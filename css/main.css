@@ -55,7 +55,7 @@ body {
     letter-spacing: 1px;
 }
 
-a.borrar-curso {
+a.borrar-ropa {
     background-color: rgb(211, 100, 100);
     border-radius: 50%;
     padding: 5px 10px;
@@ -65,7 +65,7 @@ a.borrar-curso {
     transition: all 0.3s ease-in-out;
 }
 
-a.borrar-curso:hover {
+a.borrar-ropa:hover {
     background-color: red;
     border-radius: 50%;
     padding: 5px 10px;

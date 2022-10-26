@@ -74,8 +74,9 @@ function agregarRopaAlcarro() {
       
 
         listaCarrito.innerHTML += `<tr>
-            <td><img class="imgFitMiniatura" src="${element.picture}${index}" alt="${element.nombre}"></td>
+            <td><img class="imgFitMiniatura" src="img/${element.picture}.JPG" alt="${element.nombre}"></td>
             <td>${element.nombre}</td>
+            <td class="text-center">${element.precio}$</td>
             <td class="text-center">1</td>
             <td class="text-center"><a href="#" id="${element._id}" class="borrar-ropa" data-id="1">X</a></td>
           </tr>`;
@@ -104,12 +105,12 @@ function agregarRopaAlcarro() {
 function buscarCurso ( idCurso, buscarRopa ){
 
     // Usuamos find metodo que me retorna la primera coincidencia
-    let ropaSeleccionada = buscarRopa.find((element) => idCurso == element._id);
+    let ropaSeleccion = buscarRopa.find((element) => idCurso == element._id);
     
     // Metemos la prenda seleccionado en un array porque viene como un objeto
     let ropa = [];
    
-    ropa.push(ropaSeleccionada);
+    ropa.push(ropaSeleccion);
     
     // Usuamos un spread operator para ir guardano los ya seleccionado y el ultimo seleccionado
     ropaSeleccionada = [...ropaSeleccionada, ...ropa];
@@ -122,7 +123,7 @@ function buscarCurso ( idCurso, buscarRopa ){
 printData(ropa);
 
 // Seleccionamos los botones del card en un HTML Colection
-let buttonCard = document.querySelectorAll("#div_ropa .card a");
+let buttonCard = document.querySelectorAll("#div_ropa .item-tendencia a");
 
 // Recorremos los botones asocimaos a un escuchador de eventos
 buttonCard.forEach((element) => {
