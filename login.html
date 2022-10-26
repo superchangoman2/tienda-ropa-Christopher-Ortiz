@@ -43,21 +43,39 @@
         <!-- Area principal -->
         <main>
             <div class="bg-img fade-in-imagen">
-                <form action="" class="login-form">
+                <form action="" class="login-form" id="form-login">
                   <h1>Login</h1>
               
                   <label for="email"><b>Correo Electronico</b></label>
-                  <input type="text" placeholder="Ingresa tu correo" name="email" required>
+                  <input type="text" placeholder="Ingresa tu correo" name="email" id="correo" required>
+                  <div class="alert alert-danger my-2" role="alert" id="error_correo"></div>
               
                   <label for="contrasenia"><b>Contraseña</b></label>
-                  <input type="password" placeholder="Ingresa tu contraseña" name="contrasenia" required>
+                  <input type="password" placeholder="Ingresa tu contraseña" name="contrasenia" id="password" required>
+                  <div class="alert alert-danger my-2" role="alert" id="error_password"></div>
               
-                  <input type="checkbox" class="form-check-input" id="acepto">
+                  <input type="checkbox" class="form-check-input">
                   <label class="form-check-label text-dark" for="acepto">Recuerdame</label>
 
                   <button type="submit" class="btn-login">Login</button>
                 </form>
               </div>
+
+            <!-- Modal -->
+            <div class="modal fade" tabindex="-1" role="dialog" id="modal_alerta">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modal_titulo"></h5>
+                  </div>
+                  <div class="modal-body" id="modal_body">
+                  </div>
+                  <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary" id="modal_cerrar">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+          </div>
         </main>
 
         <!-- Pie de página -->
@@ -101,6 +119,7 @@
             </div>
             <!-- Javascript -->
             <script src="js/bootstrap-5.2/bootstrap.js"></script>
+            <script src="js/formulario-login.js"></script>
         </footer>
 
     </body>

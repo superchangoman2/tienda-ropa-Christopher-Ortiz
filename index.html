@@ -126,25 +126,44 @@
         <div class="separador-fondo">
             <h2>Contactanos</h2>
         </div>
-        <form action=" ">
+        <form action=" " id="form-comentarios">
             <fieldset class="py-4">
                 <div class="col-8">
                     <label for="comentario" class="form-label">Comentarios</label>
                     <textarea class="form-control" id="comentario"></textarea>
+                    <div class="alert alert-danger my-2" role="alert" id="error_comentario"></div>
                 </div>
                 <div class="col-4">
                     <label for="nombre"> Nombre: </label>
-                    <input class="form-control" type="text" name="nombre">
+                    <input class="form-control" type="text" name="nombre" id="nombre">
+                    <div class="alert alert-danger my-2" role="alert" id="error_nombre"></div>
                 </div>
                 <div class="col-4">
                     <label for="correo"> Email: </label>
-                    <input class="form-control" type="email" name="correo"><br>
+                    <input class="form-control" type="email" name="correo" id="correo">
+                    <div class="alert alert-danger my-2" role="alert" id="error_correo"></div>
                 </div>
                 <div class="col-4">
-                    <button class="btn btn-primary text-opacity-75" type="submit">Enviar mensaje</button>
+                    <button class="btn btn-primary text-opacity-75" type="submit" id="submit">Enviar mensaje</button>
                 </div> 
             </fieldset>          
         </form>
+
+        <!-- Modal -->
+        <div class="modal fade" tabindex="-1" role="dialog" id="modal_alerta">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modal_titulo"></h5>
+                </div>
+                <div class="modal-body" id="modal_body">
+                </div>
+                <div class="modal-footer justify-content-center">
+                  <button type="button" class="btn btn-secondary" id="modal_cerrar">Cerrar</button>
+                </div>
+              </div>
+            </div>
+        </div>
 
         <!-- Pie de página -->
         <footer id="abajo" >
@@ -187,6 +206,7 @@
             </div>
             <!-- Javascript -->
             <script src="js/bootstrap-5.2/bootstrap.js"></script>
+            <script src="js/formulario-comentarios.js"></script>
         </footer>
     </body>
 </html>

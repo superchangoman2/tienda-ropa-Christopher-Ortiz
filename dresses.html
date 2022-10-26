@@ -9,6 +9,7 @@
         <link rel="shortcut icon" href="img/dress.ico" type="image/x-icon">               
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
         <link rel="stylesheet" href="css/estilos.css"> 
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
 
@@ -25,7 +26,34 @@
         
                 <div class="col-md-3 text-end">
                     <button type="button" class="btn btn-outline-primary me-2"><a href="login.html">Login </a><i class="bi bi-person-heart"></i></button>
-                    <button type="button" class="btn btn-outline-primary"><a href="cart.html">Carrito </a><i class="bi bi-bag-heart-fill"></i></button>
+                    
+
+                        <li class="submenu">
+                                <i class="bi bi-bag-heart-fill"id="img-carrito"></i>
+                                <div id="carrito">
+                                        
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Imagen</th>
+                                            <th scope="col">Nombre</th>
+                                            <th scope="col">Precio</th>
+                                            <th scope="col">Cantidad</th>
+                                            <th scope="col">Borrar</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody id="listaCarrito">
+    
+                                        </tbody>
+                                      </table>
+                                      <div class="d-grid gap-2">
+                                        <a href="#" class="btn btn-secondary" id="vaciar-carrito">Vaciar Carrito</a>
+                                      </div>
+                        
+                                </div>
+                        </li>
+
+
                     <a id="enlace_sign_up" href="sign_up.html">Registrate<i class="bi bi-person-plus-fill"></i></a>
                 </div>
             </header>
@@ -45,47 +73,16 @@
             <div class="separador-fondo">
                 <h1>Nuestros Vestidos</h1>
             </div>
-            <div class="div-ropa">
+            <div class="div-ropa" id="div_ropa">
 
-                <div class="item-tendencia vibrate">
-                    <img src="img/vestido1.JPG" alt="Vestido">
-                    <p>Vestido Nite White</p>
-                    <p>$89.99</p>
-                </div>
-                <div class="item-tendencia vibrate">
-                    <img src="img/vestido2.JPG" alt="Vestido">
-                    <p>Vestido Pink Flower</p>
-                    <p>$24.99</p>
-                </div>
-                <div class="item-tendencia vibrate">
-                    <img src="img/vestido3.JPG" alt="Vestido">
-                    <p>Vestido Blue Desire</p>
-                    <p>$39.99</p>
-                </div>
-                <div class="item-tendencia vibrate">
-                    <img src="img/blusas.JPG" alt="Blusa">
-                    <p>Blusa Vermilion Spring</p>
-                    <p>$12.99</p>
-                </div>
-                <div class="item-tendencia vibrate">
-                    <img src="img/faldas.JPG" alt="Falda">
-                    <p>Falda Young Lime</p>
-                    <p>$9.99</p>
-                </div>
-                <div class="item-tendencia vibrate">
-                    <img src="img/vestido2.JPG" alt="Vestido">
-                    <p>Vestido Pink Flower</p>
-                    <p>$24.99</p>
-                </div>
-                <div></div>
-                <div class="paginacion">
-                    <ul>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">→</a></li>
-                    </ul>
-                </div>
+            </div>
+            <div class="paginacion">
+                <ul>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">→</a></li>
+                </ul>
             </div>
         </main>
         <!-- Pie de página -->
@@ -129,6 +126,7 @@
             </div>
             <!-- Javascript -->
             <script src="js/bootstrap-5.2/bootstrap.js"></script>
+            <script src="js/articulos.js"></script>
         </footer>
 
     </body>
