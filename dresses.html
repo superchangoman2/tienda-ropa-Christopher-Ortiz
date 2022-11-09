@@ -27,11 +27,11 @@
                 <div class="col-md-3 text-end">
                     <button type="button" class="btn btn-outline-primary me-2"><a href="login.html">Login </a><i class="bi bi-person-heart"></i></button>
                     
-
                         <li class="submenu">
                                 <i class="bi bi-bag-heart-fill"id="img-carrito"></i>
+                                <span id="content__imagen-cantidad"></span>
+                                <!-- Carrito de compras -->
                                 <div id="carrito">
-                                        
                                     <table class="table">
                                         <thead>
                                           <tr>
@@ -46,13 +46,15 @@
     
                                         </tbody>
                                       </table>
-                                      <div class="d-grid gap-2">
-                                        <a href="#" class="btn btn-secondary" id="vaciar-carrito">Vaciar Carrito</a>
+                                      <div class="contentTotal">
+                                        <h5>Total</h5>
+                                        <span id="sumaRopa"></span>
                                       </div>
-                        
+                                      <div class="d-grid gap-2">
+                                        <a href="#" class="btn btn-secondary" id="vaciarCarrito">Vaciar Carrito</a>
+                                      </div>
                                 </div>
                         </li>
-
 
                     <a id="enlace_sign_up" href="sign_up.html">Registrate<i class="bi bi-person-plus-fill"></i></a>
                 </div>
@@ -126,7 +128,7 @@
             </div>
             <!-- Javascript -->
             <script src="js/bootstrap-5.2/bootstrap.js"></script>
-            <script src="js/articulos.js"></script>
+            <script src="js/carritoCompras.js" type="module"></script>
         </footer>
 
     </body>

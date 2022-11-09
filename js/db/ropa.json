@@ -1,0 +1,38 @@
+[
+    {
+        "_id": "1",
+        "nombre": "Vestido Nite White",
+        "precio": 89.99,
+        "picture": "vestido1"
+    },
+    {
+        "_id": "2",
+        "nombre": "Vestido Pink Flower",
+        "precio": 24.99,
+        "picture": "vestido2"
+    },
+    {
+        "_id": "3",
+        "nombre": "Vestido Blue Desire",
+        "precio": 39.99,
+        "picture": "vestido3"
+    },
+    {
+        "_id": "4",
+        "nombre": "Blusa Vermilion Spring",
+        "precio": 12.99,
+        "picture": "blusas"
+    },
+    {
+        "_id": "5",
+        "nombre": "Falda Young Lime",
+        "precio": 9.99,
+        "picture": "faldas"
+    },
+    {
+        "_id": "6",
+        "nombre": "Vestido Pink Flower",
+        "precio": 24.99,
+        "picture": "vestido2"
+    }    
+]
