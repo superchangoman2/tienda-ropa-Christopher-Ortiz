@@ -12,11 +12,14 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
+      <div class="contentSpinnerLoading">
+        <div class="spinner"></div>
+      </div>
 
         <div id="cabecera" class="container-fluid bg-light">
             <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom">
-                <form class="col-3 col-lg-auto mb-3 mb-lg-0 me-lg-3 d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <form class="col-3 col-lg-auto mb-3 mb-lg-0 me-lg-3 d-flex" id="formulario" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" id="findPicture" aria-label="Search">
                     <button class="btn btn-outline-success bi bi-search-heart" type="submit"></button>
                 </form>
         
@@ -78,15 +81,30 @@
             <div class="div-ropa" id="div_ropa">
 
             </div>
-            <div class="paginacion">
-                <ul>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">→</a></li>
-                </ul>
-            </div>
+            <div class="row mt-5 mb-2">
+              <div class="col-12 text-center">
+                  <button type="button" class="btn btn-secondary" id="loadingMore">Cargar Más</button>
+              </div>
+          </div>
         </main>
+
+        <!-- Modal -->
+        <div class="modal fade" id="mensajeModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <span id="mensaje" class="text-center text-uppercase">Lo sentimos</span>
+              </div>
+              <div class="modal-footer">
+          
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Pie de página -->
         <footer id="abajo" >
             <div>
@@ -129,6 +147,7 @@
             <!-- Javascript -->
             <script src="js/bootstrap-5.2/bootstrap.js"></script>
             <script src="js/carritoCompras.js" type="module"></script>
+                        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         </footer>
 
     </body>
