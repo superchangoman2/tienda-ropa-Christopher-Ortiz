@@ -13,13 +13,11 @@ const buscarRopa = ( idRopa, buscarRopa ) => {
     ultimoSeleccionado.push( ropaSeleccionada );
     //No se encuentra en el carrito
     if( siSeRepite( idRopa, ropaStorage )){
-        console.log('Entró')
         agregarRopaAlCarro( ropaStorage );
         contadorRopa(ropaStorage.length); 
         sumaRopa(ropaSeleccionada)
     }
     else{
-
         let ropaDelStorage = JSON.parse(localStorage.getItem("ropa")) || [];
         // Usuamos un spread operator para ir guardano los ya seleccionado y el ultimo seleccionado
         ropaStorage = [...ropaDelStorage, ...ultimoSeleccionado];

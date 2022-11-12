@@ -38,7 +38,8 @@ const verificarStorage = ( id, obtenerDesdeElStorage, type ) => {
         }
     
         if( type === 'removeClass' ){
-             
+
+
             obtenerDesdeElStorage.forEach( (element) => {
                 arr.push(element.nombre)
             })

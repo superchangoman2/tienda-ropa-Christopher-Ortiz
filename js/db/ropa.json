@@ -31,7 +31,43 @@
     },
     {
         "_id": "6",
-        "nombre": "Vestido Pink Flower",
+        "nombre": "Vestido Pink Flower Dark",
+        "precio": 24.99,
+        "picture": "vestido2"
+    },
+    {
+        "_id": "7",
+        "nombre": "Vestido Nite White 2",
+        "precio": 89.99,
+        "picture": "vestido1"
+    },
+    {
+        "_id": "8",
+        "nombre": "Vestido Pink Flower 2",
+        "precio": 24.99,
+        "picture": "vestido2"
+    },
+    {
+        "_id": "9",
+        "nombre": "Vestido Blue Desire 2",
+        "precio": 39.99,
+        "picture": "vestido3"
+    },
+    {
+        "_id": "10",
+        "nombre": "Blusa Vermilion Spring 2",
+        "precio": 12.99,
+        "picture": "blusas"
+    },
+    {
+        "_id": "11",
+        "nombre": "Falda Young Lime 2",
+        "precio": 9.99,
+        "picture": "faldas"
+    },
+    {
+        "_id": "12",
+        "nombre": "Vestido Pink Flower Dark 2",
         "precio": 24.99,
         "picture": "vestido2"
     }    

@@ -9,6 +9,7 @@ import verificarStorage from './utilities/verificarStorage.js';
 import sumaRopa from './utilities/sumaRopa.js';
 
 UI.cantidad.style.display = 'none';
+UI.contentSpinnerLoading.style.display = 'none';
 
 let imgCarrito = document.querySelector('#img-carrito');
 
@@ -44,9 +45,24 @@ imgCarrito.addEventListener('click', (e)=>{
    
 })
 
+UI.loadingMore.addEventListener('click', function(e){
+    e.preventDefault();
+    let ropaStorage = JSON.parse(localStorage.getItem("ropa")) || [];
+    let id = []
+    ropaStorage.forEach(element => {
+        id.push(element._id)
+    });
+    sumaRopa(ropaStorage)
+    agregarRopaAlCarro( ropaStorage );
+    sincronizarConLocalStorage( ropaStorage )
+    contadorRopa( ropaStorage.length )
+    imprimirData(myJson, 6 , 12);
+    verificarStorage(id, ropaStorage, 'DOMContentLoaded')
+    UI.loadingMore.style.display = 'none';
+});
+
 // Cargar desde el localStorage
 document.addEventListener("DOMContentLoaded", () => {
-
 
     let ropaStorage = JSON.parse(localStorage.getItem("ropa")) || [];
     let id = []
@@ -55,9 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
         id.push(element._id)
     });
 
-    // 
-    // console.log('El storage de APP-->',ropaStorage)
-    //console.log('SALIDA DE GETITEM', JSON.parse(localStorage.getItem("cursos")))
     sumaRopa(ropaStorage)
     agregarRopaAlCarro( ropaStorage );
     sincronizarConLocalStorage( ropaStorage )
@@ -65,5 +78,4 @@ document.addEventListener("DOMContentLoaded", () => {
     imprimirData( myJson );
     verificarStorage(id, ropaStorage, 'DOMContentLoaded')
 });
-
 

@@ -184,6 +184,116 @@ a.borrar-ropa:hover {
     background: #3131313b;
 }
 
+@media (max-width: 768px) {
+   
+    .contentCarrito.show {
+        position: absolute!important;
+        width: 400px!important;
+        height: auto!important;
+        overflow: hidden!important;
+        top: 43px!important;
+        right: 0!important;
+        overflow: hidden!important;
+        background: rgb(238, 238, 238)!important;
+        padding: 1rem;
+        box-shadow: 0px 7px 19px 4px rgb(0 0 0 / 32%)!important;
+        border-radius: 0 0 5px 5px!important;
+    }
+    
+  }
+
+  .contentCarrito{
+    position: absolute;
+    width: 600px;
+    height: auto;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0);
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+    top: 43px;
+    right: 0;
+
+  }
+
+  .contentCarrito.hidde{
+    background: rgba(255, 255, 255, 0);
+    display: none;
+  }
+
+  .table.hidde{
+    opacity: 0;
+  }
+
+  .table.show{
+    opacity: 1;
+  }
+
+  .contentCarrito.show{
+    position: absolute;
+    width: 700px;
+    height: auto;
+    overflow: hidden;
+    top: 43px;
+    right: 0;
+    overflow: hidden;
+    background: rgb(238, 238, 238);
+    padding: 1rem;
+    box-shadow: 0px 7px 19px 4px rgb(0 0 0 / 32%);
+    border-radius: 0 0 5px 5px
+  }
+  
+  a.hidde{
+    opacity: 0;
+    display: none;
+  }
+
+  a.show{
+    opacity:1;
+    display: block;
+  }
+
+.modal-content{
+    background: #2b2b2b;
+    color: white;
+}
+.modal-header{
+    border-bottom: 1px solid rgb(255 255 255 / 13%);
+}
+.modal-footer{
+    border-top: 1px solid rgb(255 255 255 / 13%);
+}
+
+#mensaje{
+    letter-spacing: 1px;
+}
+
+.contentSpinnerLoading{
+    background-color: rgb(20 20 20 / 42%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg);}
+  }
+  
+  .spinner {        
+      border: 8px solid rgb(255 255 255 / 25%);
+      border-left-color: hwb(42 7% 12%);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1.2s linear infinite;
+  }
+
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
